@@ -109,7 +109,7 @@ The prompts below rebuild or extend the site. Run them in order. Each phase is s
 > - Show success and error states inline, and fall back to the web.works inquiry link on errors.
 
 ## Phase 7 — Deploy
-> Push to `github.com/webworksa1/easyfinance-com`.
+> Push to `github.com/webworksa1/easy-finance`.
 > - Publish via GitHub Pages: branch `gh-pages`, or `main` / root.
 > - For the custom domain:
 >   1. Add a `CNAME` file containing `easy.finance`.

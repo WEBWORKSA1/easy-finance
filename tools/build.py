@@ -579,7 +579,7 @@ def build_404_sitemap():
     body = '''<section class="hero"><div class="wrap center"><div style="font-size:4rem">🧭</div><h1>Page not found</h1><p class="lede">This page may have moved. Try a search, or start with our most popular tools.</p>
 <form class="search-wrap" role="search" style="margin:20px auto"><div class="hero-search" style="margin:0 auto"><input data-search type="search" placeholder="Search tools & guides" aria-label="Search"><button class="btn btn-primary" type="submit">Search</button></div><div class="search-results"></div></form>
 <div class="pill-list" style="justify-content:center"><a href="calculators/">Calculators</a><a href="guides/">Guides</a><a href="get-help.html">Get help</a></div></div></section>'''
-    base = "<script>document.write('<base href=\"'+(/github\\.io$/.test(location.hostname)?'/easyfinance-com/':'/')+'\">')</script>"
+    base = "<script>document.write('<base href=\"'+(/github\\.io$/.test(location.hostname)?'/easy-finance/':'/')+'\">')</script>"
     layout("404.html","Page Not Found","The page you were looking for could not be found.",body,head_extra=base,root="")
     PAGES.remove("404.html")
     links = "".join(f'<li><a href="{s["u"]}">{s["t"]}</a></li>' for s in SEARCH)

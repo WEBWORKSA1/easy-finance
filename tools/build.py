@@ -63,27 +63,15 @@ def layout(path, title, desc, body, active="", schema=None, extra_js="", og_type
 {body}
 </main>
 <footer class="site-foot"><div class="wrap">
-<div class="foot-grid">
-<div><a class="logo" href="{root}index.html">{LOGO}<span>Easy<span class="dot">.</span>Finance</span></a>
-<p class="notice" style="margin-top:12px">Money made easy: free calculators, plain-English guides and a free path to expert help. Independent, reader-supported and built for everyone.</p>
-<form class="search-wrap" role="search" style="margin-top:8px"><div class="hero-search" style="margin:0;box-shadow:none"><input data-search type="search" placeholder="Search tools & guides" aria-label="Search the site"></div><div class="search-results"></div></form></div>
-<div><h4>Calculators</h4><ul>
-<li><a href="{root}calculators/mortgage.html">Mortgage</a></li><li><a href="{root}calculators/compound-interest.html">Compound interest</a></li><li><a href="{root}calculators/loan-emi.html">Loan & EMI</a></li><li><a href="{root}calculators/retirement.html">Retirement</a></li><li><a href="{root}calculators/debt-payoff.html">Debt payoff</a></li><li><a href="{root}calculators/">All calculators →</a></li></ul></div>
-<div><h4>Learn</h4><ul>
-<li><a href="{root}guides/">All guides</a></li><li><a href="{root}videos.html">Video library</a></li><li><a href="{root}glossary.html">Finance glossary</a></li><li><a href="{root}money-checkup.html">Money check-up quiz</a></li><li><a href="{root}tools.html">Tools hub</a></li></ul></div>
-<div><h4>Get involved</h4><ul>
-<li><a href="{root}get-help.html">Get free expert help</a></li><li><a href="{root}support.html">Support / donate</a></li><li><a href="{root}contests.html">Contests & prizes</a></li><li><a href="{root}careers.html">Careers & talent</a></li><li><a href="{root}advertise.html">Advertise & partner</a></li><li><a href="{INQ}" target="_blank" rel="noopener">Buy / sponsor this domain</a></li></ul></div>
-<div><h4>Company</h4><ul>
-<li><a href="{root}about.html">About</a></li><li><a href="{root}contact.html">Contact</a></li><li><a href="{root}how-we-make-money.html">How we make money</a></li><li><a href="{root}editorial-guidelines.html">Editorial guidelines</a></li><li><a href="{root}privacy.html">Privacy policy</a></li><li><a href="{root}cookies.html">Cookie policy</a></li><li><a href="{root}terms.html">Terms of use</a></li><li><a href="{root}disclaimer.html">Disclaimer</a></li><li><a href="{root}trademark.html">Trademark & copyright</a></li><li><a href="{root}accessibility.html">Accessibility</a></li><li><a href="{root}sitemap.html">Sitemap</a></li></ul></div>
-</div>
+<div id="foot-rich"></div>
+<nav class="pill-list" aria-label="Legal" style="margin-top:8px"><a href="{root}about.html">About</a><a href="{root}contact.html">Contact</a><a href="{root}privacy.html">Privacy policy</a><a href="{root}terms.html">Terms</a><a href="{root}disclaimer.html">Disclaimer</a><a href="{root}how-we-make-money.html">How we make money</a><a href="{root}trademark.html">Trademark & copyright</a><a href="{root}sitemap.html">Sitemap</a></nav>
 <div class="fine">
-<p><b>Disclaimer:</b> Easy.Finance provides general educational information and calculators. It is not financial, investment, tax or legal advice, and we are not a bank, lender, broker or registered adviser. Results are estimates. Consult a qualified professional before making decisions. Some links and referrals may earn us compensation; see <a href="{root}how-we-make-money.html">how we make money</a>.</p>
-<p><b>Trademark notice:</b> Easy.Finance is an independent publication and is not affiliated with, endorsed by or connected to easyGroup Ltd, easyJet, or any company trading under "EasyFinance", "Easy Finance" or a similar name. All third-party trademarks and video content belong to their respective owners. <a href="{root}trademark.html">Full disclosure</a>.</p>
+<p><b>Disclaimer:</b> Easy.Finance provides general educational information and calculators. It is not financial, investment, tax or legal advice, and we are not a bank, lender, broker or registered adviser. Results are estimates. Some links and referrals may earn us compensation.</p>
+<p><b>Trademark notice:</b> Easy.Finance is an independent publication, not affiliated with easyGroup Ltd, easyJet, or any company trading as "EasyFinance", "Easy Finance" or similar. Third-party trademarks and videos belong to their owners.</p>
 <p>© <span data-year>{TODAY.year}</span> Easy.Finance. All rights reserved.</p>
 </div></div></footer>
-<div class="cookie" role="dialog" aria-live="polite" aria-label="Cookie notice"><b>Cookies on Easy.Finance</b><p class="notice" style="margin:6px 0 0">We and our advertising partners (including Google) use cookies to deliver and measure ads, remember preferences and understand site usage. See our <a href="{root}cookies.html">cookie policy</a> and <a href="{root}privacy.html">privacy policy</a>.</p><div class="row"><button class="btn btn-primary" data-cookie="all">Accept all</button><button class="btn btn-ghost" data-cookie="essential">Essential only</button></div></div>
-<div class="sticky-cta"><span>Talk to a money expert — free</span><a class="btn btn-gold" href="{root}get-help.html" style="padding:8px 16px">Get help</a></div>
 <script src="{root}assets/js/config.js"></script>
+<script src="{root}assets/js/chrome.js"></script>
 <script src="{root}assets/js/search-index.js"></script>
 <script src="{root}assets/js/main.js"></script>
 {extra_js.replace("{root}", root)}
